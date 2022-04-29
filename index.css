@@ -24,7 +24,7 @@ ul {
  display: flex;
 }
 
-.navbar .active{
+.navbar .active {
  color: #5651DD;
 }
 
@@ -63,6 +63,17 @@ ul {
   left: 0;
  }
 
+ .navbar .navbar-toggle {
+  display: none;
+  /* height: 50px; */
+
+  /* make the navbar fixed */
+  /* top: 0; */
+  /* z-index: 999;
+  position: fixed;
+  width: 100%; */
+ }
+
  .mobile-nav-enter-active,
  .mobile-nav-leave-active {
   transition: all 0.3s ease;
@@ -78,6 +89,21 @@ ul {
 
  .mobile-nav-leave-to {
   transform: translateX(-250px);
+ }
+}
+
+@media (max-width: 670px) {
+ .navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+  color: #5651dd;
+  margin-left: 72.5%;
+  align-content: flex-end;
+
+
+  position: fixed;
+  width: 100%;
+
  }
 }
 
