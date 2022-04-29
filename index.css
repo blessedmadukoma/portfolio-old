@@ -408,6 +408,10 @@ hr {
  font-size: 48px;
 }
 
+.blog h3 {
+ text-align: left;
+}
+
 .blog .button {
  padding: 0;
  margin-top: 20px;
