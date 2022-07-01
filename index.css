@@ -126,7 +126,7 @@ button:hover {
 
 /* FlexBox styling */
 .container {
- padding: 0 30px;
+ padding: 0 50px;
  margin: 0 auto;
  max-width: 1100px;
 }
@@ -346,6 +346,8 @@ hr {
 .projects .flex-container .box .project-div {
  display: flex;
  justify-content: flex-start;
+ /* position: relative; */
+ align-content: space-between;
  margin: 5px 15px;
 }
 
@@ -412,7 +414,6 @@ hr {
 .resume p {
  margin-top: 60px;
  font-size: 24px;
- /* max-width: 500px; */
 }
 
 .resume .button {
@@ -446,14 +447,19 @@ hr {
 .blog .flex-container {
  margin-top: 25px;
  display: flex;
- justify-content: space-between;
+ align-content: space-between;
+ justify-items: flex-end;
+}
+
+.blog #blog-first {
+ padding-right: 20px;
+ margin-right: 120px;
 }
 
 .blog .flex-container a {
  flex: 1;
  margin: 0px 25px 70px 5px;
  /* top right bottom left */
- width: 100%;
  background: #0a092c;
  box-shadow: 40px 44px 81px rgb(111 118 138 / 8%);
  border-radius: 10px;
@@ -461,7 +467,7 @@ hr {
  border: 4px solid;
  padding: 16px 16px;
  /* top right bottom left */
- height: 250px;
+ height: 200px;
 
  animation-duration: 10s;
  animation-timing-function: linear;
