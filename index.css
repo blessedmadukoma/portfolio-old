@@ -452,8 +452,21 @@ hr {
 }
 
 .blog #blog-first {
- padding-right: 20px;
- margin-right: 120px;
+ margin-right: 50px;
+}
+.blog #blog-second {
+ margin-left: 50px;
+}
+
+@media (max-width: 720px) {
+ .blog #blog-first {
+  margin-right: 0px;
+  max-width: 85%;
+ }
+ .blog #blog-second {
+  margin-left: 0px;
+  max-width: 85%;
+ }
 }
 
 .blog .flex-container a {
