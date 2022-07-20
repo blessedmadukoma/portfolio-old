@@ -437,7 +437,6 @@ hr {
 
 .blog h3 {
  text-align: center;
- 
 }
 
 .blog .button {
@@ -526,6 +525,12 @@ hr {
   width: 99%;
  }
 
+ .blog h3 {
+  text-align: center;
+   font-size: 18px;
+ }
+ 
+
  .blog .flex-container a div {
   width: 97%;
  }
@@ -591,6 +596,8 @@ hr {
  outline: solid 3px #8A92DB;
  -moz-outline: solid 3px #8A92DB;
  -moz-outline-radius: 3px;
+ -webkit-outline: solid 3px #8A92DB;
+ -webkit-outline-radius: 3px;
 }
 
 .contact .flex-container .form div {
