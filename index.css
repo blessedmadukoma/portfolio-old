@@ -533,6 +533,11 @@ hr {
 
 }
 
+@media (max-width: 480px) {
+ .blog .flex-container .box {
+  width: 98.5%;
+ }
+}
 @media (max-width: 460px) {
  .blog .flex-container .box {
   width: 98%;
