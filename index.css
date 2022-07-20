@@ -48,65 +48,6 @@ ul {
  }
 }
 
-@media (max-width: 789px) {
- .mobile-nav .nav-links {
-  display: none;
-  padding: 10px 0px;
-  width: 30%;
-  max-width: 250px;
-  /* display: flex;
-  flex-direction: column; */
-  position: fixed;
-  height: 100%;
-  background-color: #090682;
-  top: 0;
-  left: 0;
- }
-
- .navbar .navbar-toggle {
-  display: none;
-  /* height: 50px; */
-
-  /* make the navbar fixed */
-  /* top: 0; */
-  /* z-index: 999;
-  position: fixed;
-  width: 100%; */
- }
-
- .mobile-nav-enter-active,
- .mobile-nav-leave-active {
-  transition: all 0.3s ease;
- }
-
- .mobile-nav-enter {
-  transform: translateX(-250px);
- }
-
- .mobile-nav-enter-to {
-  transform: translateX(0);
- }
-
- .mobile-nav-leave-to {
-  transform: translateX(-250px);
- }
-}
-
-@media (max-width: 670px) {
- .navbar .logo {
-  font-size: x-large;
-  font-weight: bold;
-  color: #5651dd;
-  margin-left: 72.5%;
-  align-content: flex-end;
-
-
-  position: fixed;
-  width: 100%;
-
- }
-}
-
 /* button styling */
 button {
  background-color: #5651DD;
@@ -126,9 +67,9 @@ button:hover {
 
 /* FlexBox styling */
 .container {
- padding: 0 50px;
+ padding: 0 35px;
  margin: 0 auto;
- max-width: 1100px;
+ max-width: 960px;
 }
 
 .navbar {
@@ -179,23 +120,6 @@ button:hover {
 .header {
  /* min-height: 600px; */
  padding-top: 145px;
-}
-
-@media (max-width: 900px) {
- .header {
-  padding-top: 100px;
- }
-
- .header img {
-  /* max-width: 30%; */
-  height: 1px;
-  width: 380px;
-  /* display: none; */
- }
-
- .header .flex-container .personality {
-  font-size: 16px;
- }
 }
 
 @media (max-width: 720px) {
@@ -363,44 +287,6 @@ hr {
  text-align: center;
 }
 
-/* Make the projects stacked against each other */
-@media(max-width: 900px) {
- .projects .flex-container {
-  flex-direction: column;
-  padding-top: 20px;
-  text-align: center;
- }
-
- .projects .flex-container .box {
-  display: block;
-  text-align: center;
- }
-
- .projects {
-  padding-top: 80px;
- }
-
- .projects h2 {
-  font-size: 31px;
-  font-weight: 700;
- }
-
- .projects .container p {
-  font-size: 16px;
- }
-
- .projects .flex-container .box {
-  padding-bottom: 5px;
-  margin: 0px 25px 30px 5px;
-  /* top right bottom left */
- }
-
- .projects .flex-container .box:hover {
-  transform: scale(1.1);
-  transition: 100ms linear;
- }
-}
-
 /* Resume Styling */
 .resume {
  padding-top: 150px;
@@ -418,12 +304,6 @@ hr {
 
 .resume .button {
  margin-top: 60px;
-}
-
-@media (max-width: 900px) {
- .resume h2 {
-  font-size: 38px;
- }
 }
 
 /* Blog section styling */
@@ -627,3 +507,121 @@ hr {
   width: 350px;
  }
 }
+
+
+/* Make the projects stacked against each other */
+@media(max-width: 900px) {
+  .header {
+    padding-top: 100px;
+   }
+  
+   .header img {
+    /* max-width: 30%; */
+    height: 1px;
+    width: 380px;
+    /* display: none; */
+   }
+  
+   .header .flex-container .personality {
+    font-size: 16px;
+   }
+  
+   .blog h2, .resume h2, .projects h2 {
+    font-size: 34px;
+   }
+   
+ .projects .flex-container {
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: center;
+ }
+
+ .projects .flex-container .box {
+  display: block;
+  text-align: center;
+ }
+
+ .projects {
+  padding-top: 80px;
+ }
+
+ .projects h2 {
+  font-size: 31px;
+  font-weight: 700;
+ }
+
+ .projects .container p {
+  font-size: 16px;
+ }
+
+ .projects .flex-container .box {
+  padding-bottom: 5px;
+  margin: 0px 25px 30px 5px;
+  /* top right bottom left */
+ }
+
+ .projects .flex-container .box:hover {
+  transform: scale(1.1);
+  transition: 100ms linear;
+ }
+}
+
+
+@media (max-width: 789px) {
+  .mobile-nav .nav-links {
+   display: none;
+   padding: 10px 0px;
+   width: 30%;
+   max-width: 250px;
+   /* display: flex;
+   flex-direction: column; */
+   position: fixed;
+   height: 100%;
+   background-color: #090682;
+   top: 0;
+   left: 0;
+  }
+ 
+  .navbar .navbar-toggle {
+   display: none;
+   /* height: 50px; */
+ 
+   /* make the navbar fixed */
+   /* top: 0; */
+   /* z-index: 999;
+   position: fixed;
+   width: 100%; */
+  }
+ 
+  .mobile-nav-enter-active,
+  .mobile-nav-leave-active {
+   transition: all 0.3s ease;
+  }
+ 
+  .mobile-nav-enter {
+   transform: translateX(-250px);
+  }
+ 
+  .mobile-nav-enter-to {
+   transform: translateX(0);
+  }
+ 
+  .mobile-nav-leave-to {
+   transform: translateX(-250px);
+  }
+ }
+ 
+ @media (max-width: 670px) {
+  .navbar .logo {
+   font-size: x-large;
+   font-weight: bold;
+   color: #5651dd;
+   margin-left: 72.5%;
+   align-content: flex-end;
+ 
+ 
+   position: fixed;
+   width: 100%;
+ 
+  }
+ }
