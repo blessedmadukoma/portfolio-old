@@ -340,10 +340,10 @@ hr {
 }
 
 .blog #blog-first {
- margin-right: 50px;
+ margin-right: 25px;
 }
 .blog #blog-second {
- margin-left: 50px;
+ margin-left: 25px;
 }
 
 .blog .flex-container a {
@@ -458,6 +458,7 @@ hr {
 .contact .flex-container .form {
  justify-content: flex-start;
  padding: 0px 25px;
+ padding-right: 0;
 }
 
 .contact .flex-container .form label {
@@ -474,6 +475,7 @@ hr {
 
 .contact .flex-container .form input:focus {
  outline: solid 3px #8A92DB;
+ /* outlineradius: */
  -moz-outline: solid 3px #8A92DB;
  -moz-outline-radius: 3px;
  -webkit-outline: solid 3px #8A92DB;
@@ -510,16 +512,23 @@ hr {
 
 
 /* Make the projects stacked against each other */
+@media (max-width: 850px) {
+  .header .my-memoji {
+    height: 1px;
+    width: 380px;
+   }
+
+}
 @media(max-width: 900px) {
   .header {
     padding-top: 100px;
    }
-  
-   .header img {
-    /* max-width: 30%; */
-    height: 1px;
-    width: 380px;
-    /* display: none; */
+
+   .header h2 {
+    font-size: 38px;
+   }
+   .header h3 {
+    font-size: 29px;
    }
   
    .header .flex-container .personality {
