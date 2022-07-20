@@ -436,7 +436,8 @@ hr {
 }
 
 .blog h3 {
- text-align: left;
+ text-align: center;
+ 
 }
 
 .blog .button {
@@ -445,10 +446,18 @@ hr {
 }
 
 .blog .flex-container {
- margin-top: 25px;
  display: flex;
  align-content: space-between;
  justify-items: flex-end;
+}
+
+.blog .flex-container .box {
+ background: black;
+ margin: 5px;
+ padding: 5px 5px;
+ height: 92%;
+ border-radius: 5px;
+ margin-bottom: 0;
 }
 
 .blog #blog-first {
@@ -458,42 +467,17 @@ hr {
  margin-left: 50px;
 }
 
-@media (max-width: 720px) {
- .blog #blog-first {
-  margin-right: 0px;
-  max-width: 85%;
- }
- .blog #blog-second {
-  margin-left: 0px;
-  max-width: 85%;
- }
-}
-
 .blog .flex-container a {
+ margin: 0px;
  flex: 1;
- margin: 0px 25px 70px 5px;
- /* top right bottom left */
- background: #0a092c;
- box-shadow: 40px 44px 81px rgb(111 118 138 / 8%);
  border-radius: 10px;
  cursor: pointer;
- border: 4px solid;
- padding: 16px 16px;
- /* top right bottom left */
- height: 200px;
+ height: 120px;
 
- animation-duration: 10s;
- animation-timing-function: linear;
- animation-iteration-count: infinite;
- -webkit-animation-name: flash_border;
- -webkit-animation-duration: 10s;
- -webkit-animation-timing-function: linear;
- -webkit-animation-iteration-count: infinite;
- -moz-animation-name: flash_border;
- animation-name: flash_border;
- -moz-animation-duration: 10s;
- -moz-animation-timing-function: linear;
- -moz-animation-iteration-count: infinite;
+ background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+ background-size: 400% 400%;
+ animation: gradient 5s ease infinite;
+ /* height: 100vh; */
 }
 
 .blog .flex-container a:hover {
@@ -501,81 +485,15 @@ hr {
  transition: 100ms linear;
 }
 
-@keyframes flash_border {
+@keyframes gradient {
  0% {
-  border-color: red blue green orange;
+   background-position: 0% 50%;
  }
-
- 25% {
-  border-color: rgb(164, 13, 13) rgb(75, 75, 223) rgb(89, 156, 89) rgb(227, 189, 118);
- }
-
  50% {
-  border-color: orange red blue green;
+   background-position: 100% 50%;
  }
-
- 75% {
-  border-color: green orange red blue;
- }
-
- 90% {
-  border-color: blue green orange red;
- }
-
  100% {
-  border-color: red blue green orange;
- }
-}
-
-@-webkit-keyframes flash_border {
- 0% {
-  border-color: red blue green orange;
- }
-
- 25% {
-  border-color: rgb(164, 13, 13) rgb(75, 75, 223) rgb(89, 156, 89) rgb(227, 189, 118);
- }
-
- 50% {
-  border-color: orange red blue green;
- }
-
- 75% {
-  border-color: green orange red blue;
- }
-
- 90% {
-  border-color: blue green orange red;
- }
-
- 100% {
-  border-color: red blue green orange;
- }
-}
-
-@-moz-keyframes flash_border {
- 0% {
-  border-color: red blue green orange;
- }
-
- 25% {
-  border-color: rgb(164, 13, 13) rgb(75, 75, 223) rgb(89, 156, 89) rgb(227, 189, 118);
- }
-
- 50% {
-  border-color: orange red blue green;
- }
-
- 75% {
-  border-color: green orange red blue;
- }
-
- 90% {
-  border-color: blue green orange red;
- }
-
- 100% {
-  border-color: red blue green orange;
+   background-position: 0% 50%;
  }
 }
 
@@ -590,21 +508,34 @@ hr {
   padding-top: 80px;
  }
 
- .blog h2 {
-  font-size: 31px;
-  font-weight: 700;
+ .blog #blog-first {
+  margin-right: 0px;
+  max-width: 85%;
  }
-
+ .blog #blog-second {
+  margin-left: 0px;
+  max-width: 85%;
+ }
  .blog .flex-container a {
-  margin: 0px 30px 30px 5px;
-  width: 100%;
-
+  margin-bottom: 50px;
+ }
+ .blog .flex-container .box {
+  margin-right: 50px !important;
+  padding: 15px;
+  margin: 2.5px;
+  border-radius: 9px;
+  width: 99%;
  }
 
  .blog .flex-container a div {
-  height: 80px;
-  margin: 0px 30px 30px 5px;
-  width: 100%;
+  width: 97%;
+ }
+
+}
+
+@media (max-width: 460px) {
+ .blog .flex-container .box {
+  width: 98%;
  }
 }
 
