@@ -474,10 +474,9 @@ hr {
  cursor: pointer;
  height: 120px;
 
- background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+ background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #084e67, #23d5ab, #087d4e, #022c1b, #010e62, #0a22bd, #e73c7e, #ee7752);
  background-size: 400% 400%;
- animation: gradient 5s ease infinite;
- /* height: 100vh; */
+ animation: gradient 10s ease infinite;
 }
 
 .blog .flex-container a:hover {
